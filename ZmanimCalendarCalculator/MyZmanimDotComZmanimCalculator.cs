@@ -13,7 +13,7 @@ namespace ConsoleApp3
     {
         private const string APIURL = "https://api.myzmanim.com/engine1.svc";
         private const string APIUSER = "0013121284";
-        private const string APIKEY = "e01cfa7bf06c12200e9aa1a92ef9aed64851c935d56698c6e7ebfe570ed64bfc44afa299e5ca09a2";
+        private const string APIKEY = "";
         private const string chabadApiUri = "webservices/zmanim/zmanim/Get_Zmanim?additional=true&locationid=98115&locationtype=2&save=1&tdate={0}&jewish=Halachic-Times.htm&aid=143790&startdate={0}&enddate={0}";
         private readonly string location;
         private readonly string language;
