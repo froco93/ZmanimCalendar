@@ -8,7 +8,7 @@ namespace ConsoleApp3
 {
     public class ZmanResult
     {
-        public DateTime EndTime { get; set; }
+        public DateTime? EndTime { get; set; }
 
         public string ParshaAndHoliday { get; set; }
 
@@ -16,6 +16,17 @@ namespace ConsoleApp3
 
         public DateTime Date { get; set; }
 
-        public DateTime Sunset { get; set; }
+        public DateTime? Candles { get; set; }
+    }
+
+    public class FastResult
+    {
+        public DateTime? EndTime { get; set; }
+
+        public string ParshaAndHoliday { get; set; }
+
+        public DateTime Date { get; set; }
+
+        public DateTime? StartTime { get; set; }
     }
 }

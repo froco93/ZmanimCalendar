@@ -10,7 +10,7 @@ namespace ConsoleApp3
     {
         Task<DateTime> GetShabbatEndTime(DateTime date);
 
-        DateTime GetShabbatEndTime(EngineResultDay date);
+        Task<DateTime> GetShabbatEndTime(EngineResultDay date);
 
         Task<EngineResultDay> GetZmanimByDay(DateTime date);
     }
