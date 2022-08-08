@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3
+namespace ZmanimCalendar
 {
     public interface IZmanimCalculator
     {
@@ -14,4 +14,5 @@ namespace ConsoleApp3
 
         Task<EngineResultDay> GetZmanimByDay(DateTime date);
     }
+    
 }
