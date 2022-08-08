@@ -27,6 +27,7 @@ namespace ZmanimCalendar
             {
                 var intervalEnd = intervalStartTime + interval;
                 string content = GetZmanBlock(intervalEnd).GetAwaiter().GetResult();
+                Console.WriteLine($"Retrived Times between {intervalStartTime:s} and {intervalEnd:s}");
                 intervalStartTime = intervalEnd.AddDays(1);
                 yield return JsonSerializer.Deserialize<ChabadZmanResult>(content);
             }

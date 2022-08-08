@@ -13,7 +13,9 @@ namespace ZmanimCalendar
             Date = date;
             StartTime = startTime;
             EndTime = endTime;
-            Title = Encoding.Unicode.GetString(Encoding.Unicode.GetBytes(title));
+            // Replace commas with dashes so there are no csv conflicts.
+            //Title = Encoding.Unicode.GetString(Encoding.Unicode.GetBytes(title.Replace(",", "-")));
+            Title = title.Replace(",", "-");
         }
 
         public string Date { get; set; }

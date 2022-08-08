@@ -9,9 +9,6 @@ namespace ZmanimCalendar
 {
     public class CalendarBuilder
     {
-        private readonly string? zipCode;
-        private readonly DateTime startDate;
-        private readonly DateTime endDate;
         private readonly IChabadZmanimService chabadZmanimService;
         private readonly UserInput userInput;
 
@@ -47,15 +44,17 @@ namespace ZmanimCalendar
             {
                 DayResult? dayResult = null;
 
+                // If its a fast day, get the fast times
                 if (day.Parsha == "Fast")
                 {
                     dayResult = day.GetFastTimes();
                 }
+                // If its a special fast day (9 Av or YomKippur), get the correct times
                 else if (day.HolidayName.IsSpecialFastDay())
                 {
+                    // For Eve of 9Av, override start time with shkiah instead of candel lighting
                     if (day.HolidayName.StartsWith("Eve"))
                     {
-                        // If 9 Av Starts Saturday Night, set candles to Shkiah instead of candle lighting
                         if (day.HolidayName.Contains("Av"))
                         {
                             candles = day.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Shkiah")?
@@ -65,11 +64,12 @@ namespace ZmanimCalendar
                     }
                     else
                     {
+                        // Yom Kippur, use candle lighiting and shabbat end times
                         if (day.HolidayName == ("Yom Kippur"))
                         {
                             dayResult = day.GetShabbatResult(candles, prevDate);
                         }
-                        // 9 Av
+                        // 9 Av, use Shkiah and Fast end time
                         else
                         {
                             dayResult = day.GetAvTimes(shkiah, prevDate);
@@ -77,14 +77,17 @@ namespace ZmanimCalendar
                     }
 
                 }
+                // If the day is a Chag, we will need to get correct times
                 else if (day.IsChag())
                 {
                     // Eve of Holiday
                     if (day.IsErev())
                     {
-                        // if start of holiday is on saturday night
-                        // Finish Shabbat row with just candlelighting
-                        // Add first day of holiday with shabbat time as candle lighting
+                        /*  if start of holiday is on saturday night
+                            Finish Shabbat row with just candlelighting
+                            Add first day of holiday with shabbat end time as candle lighting
+                            eg: 06/03/22 Bamidbar 8:43, 06/03/22 Shavuot 1 9:43,
+                        */
                         if (day.DayOfWeek == 6)
                         {
                             dayResult = new DayResult(prevDate, candles, string.Empty, day.Parsha);
@@ -92,12 +95,15 @@ namespace ZmanimCalendar
 
                             dayResult = new DayResult(day.DisplayDate, day.GetSecondDayHolidayCandlesTime(), string.Empty, day.HolidayName.ParseHolidayName());
                         }
+                        // Otherwise just add standard row using 1st night candle lighting times
+                        // eg:09/06/21 Rosh Hashana 1 7:20
                         else
                         {
                             dayResult = new DayResult(day.DisplayDate, day.GetShkiahCandleLightingTime(), string.Empty, day.HolidayName.ParseHolidayName());
                         }
                     }
-                    // First Day Holiday
+                    // If its the first day of the holiday, just save the candle lighting times for second night. 
+                    // Above code will already add 1st night candle times
                     else if (holidayCount == 0)
                     {
                         candles = day.GetSecondDayHolidayCandlesTime();
@@ -105,18 +111,16 @@ namespace ZmanimCalendar
                         prevDate = day.DisplayDate;
                         holidayCount++;
                     }
+                    // If its the second night, use last nights candles plus tonight's end time to form the correct times
+                    // eg: 09/07/21 8:15, 8:13
                     else if (holidayCount > 0)
                     {
                         dayResult = day.GetHolidayEveResult(candles, prevDate);
                         holidayCount = 0;
                     }
-                    else
-                    {
-
-                    }
 
                 }
-                // If Shabbat 
+                // If Shabbat, get regular shabbt times using last nights candles! 
                 else if (day.DayOfWeek == 6)
                 {
                     dayResult = day.GetShabbatResult(candles, prevDate);
