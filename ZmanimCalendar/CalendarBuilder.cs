@@ -31,8 +31,6 @@ namespace ZmanimCalendar
             // go to chabad and get all of the "Day" objects 
             var listOfTimesByDay = chabadZmanimService.GetChabadZmanResults(userInput).SelectMany(_ => _.Days);
 
-            Console.WriteLine("Retrieved all times, starting calculations");
-
             // Filter only days that are needed (Saturday, Holiday, or a day that has candle lighting(
             var filteredDays = listOfTimesByDay.Where(_ =>
                 _.IsHoliday ||
@@ -47,6 +45,7 @@ namespace ZmanimCalendar
             bool candlesSet = false;
             foreach (var day in filteredDays)
             {
+                Console.WriteLine($"Processing date {day.DisplayDate}");
                 DayResult? dayResult = null;
 
                 // If its a fast day, get the fast times

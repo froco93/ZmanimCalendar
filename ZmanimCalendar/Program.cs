@@ -11,12 +11,17 @@ var calendarBuilder = new CalendarBuilder(input);
 
 var result = calendarBuilder.CalculateCalendar();
 
-var fileName = $"Output_{input.Format()}.csv";
+var fileName = $"Output_{input.Format()}";
 Console.WriteLine($"Writing results to {fileName}");
 
-using (TextWriter tw = File.CreateText(fileName))
+using (TextWriter tw = File.CreateText(fileName + ".csv"))
 {
     tw.WriteLine(result.ToCsv(","));
+}
+
+using (TextWriter tw = File.CreateText(fileName + ".html"))
+{
+    tw.WriteLine(result.ToHtmlTable());
 }
 
 Console.WriteLine("Press any key to exit");
