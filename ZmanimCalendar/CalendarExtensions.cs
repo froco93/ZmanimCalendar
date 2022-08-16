@@ -60,7 +60,7 @@ namespace ZmanimCalendar
             string fastStart = string.Empty;
             if(DateTime.TryParse(sunrise, out var sunriseDate))
             {
-                fastStart = sunriseDate.Subtract(TimeSpan.FromMinutes(72)).ToString("h:m tt");
+                fastStart = sunriseDate.Subtract(TimeSpan.FromMinutes(72)).ToString("h:mm tt");
             }
 
             string fastEnd = fastDay.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Tzeis")?
