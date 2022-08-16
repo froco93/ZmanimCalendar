@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZmanimCalculator\ZmanimCalendar.csproj" />
+    <ProjectReference Include="..\ZmanimCalendar\ZmanimCalendar.csproj" />
   </ItemGroup>
 
   <ItemGroup>
