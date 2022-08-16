@@ -1,0 +1,485 @@
+{
+
+  "Results": [
+    {
+      "Date": "9/3/2021",
+      "StartTime": "7:27 PM",
+      "EndTime": "8:22 PM",
+      "Title": "Nitzavim"
+    },
+    {
+      "Date": "9/6/2021",
+      "StartTime": "7:21 PM",
+      "EndTime": "",
+      "Title": "Rosh Hashanah"
+    },
+    {
+      "Date": "9/7/2021",
+      "StartTime": "8:15 PM",
+      "EndTime": "8:13 PM",
+      "Title": "Rosh Hashanah 2"
+    },
+    {
+      "Date": "9/9/2021",
+      "StartTime": "5:27 AM",
+      "EndTime": "8:04 PM",
+      "Title": "Fast of Gedalia"
+    },
+    {
+      "Date": "9/10/2021",
+      "StartTime": "7:13 PM",
+      "EndTime": "8:07 PM",
+      "Title": "Vayelech"
+    },
+    {
+      "Date": "9/15/2021",
+      "StartTime": "7:03 PM",
+      "EndTime": "7:56 PM",
+      "Title": "Yom Kippur"
+    },
+    {
+      "Date": "9/17/2021",
+      "StartTime": "6:58 PM",
+      "EndTime": "7:52 PM",
+      "Title": "Ha\u0027azinu"
+    },
+    {
+      "Date": "9/20/2021",
+      "StartTime": "6:52 PM",
+      "EndTime": "",
+      "Title": "Sukkot"
+    },
+    {
+      "Date": "9/21/2021",
+      "StartTime": "7:46 PM",
+      "EndTime": "7:44 PM",
+      "Title": "Sukkot 1 [and 2]"
+    },
+    {
+      "Date": "9/24/2021",
+      "StartTime": "6:44 PM",
+      "EndTime": "7:38 PM",
+      "Title": "Sukkot, Chol Hamoed, Shabbat"
+    },
+    {
+      "Date": "9/27/2021",
+      "StartTime": "6:38 PM",
+      "EndTime": "",
+      "Title": " Shemini Atzeret"
+    },
+    {
+      "Date": "9/28/2021",
+      "StartTime": "7:31 PM",
+      "EndTime": "7:29 PM",
+      "Title": "Simchat Torah"
+    },
+    {
+      "Date": "10/1/2021",
+      "StartTime": "6:30 PM",
+      "EndTime": "7:23 PM",
+      "Title": "Bereishit"
+    },
+    {
+      "Date": "10/8/2021",
+      "StartTime": "6:16 PM",
+      "EndTime": "7:10 PM",
+      "Title": "Noach"
+    },
+    {
+      "Date": "10/15/2021",
+      "StartTime": "6:02 PM",
+      "EndTime": "6:56 PM",
+      "Title": "Lech-Lecha"
+    },
+    {
+      "Date": "10/22/2021",
+      "StartTime": "5:49 PM",
+      "EndTime": "6:44 PM",
+      "Title": "Vayeira"
+    },
+    {
+      "Date": "10/29/2021",
+      "StartTime": "5:38 PM",
+      "EndTime": "6:33 PM",
+      "Title": "Chayei Sarah"
+    },
+    {
+      "Date": "11/5/2021",
+      "StartTime": "5:27 PM",
+      "EndTime": "6:23 PM",
+      "Title": "Toldot"
+    },
+    {
+      "Date": "11/12/2021",
+      "StartTime": "4:17 PM",
+      "EndTime": "5:15 PM",
+      "Title": "Vayeitzei"
+    },
+    {
+      "Date": "11/19/2021",
+      "StartTime": "4:10 PM",
+      "EndTime": "5:09 PM",
+      "Title": "Vayishlach"
+    },
+    {
+      "Date": "11/26/2021",
+      "StartTime": "4:04 PM",
+      "EndTime": "5:04 PM",
+      "Title": "Vayeishev"
+    },
+    {
+      "Date": "12/3/2021",
+      "StartTime": "4:01 PM",
+      "EndTime": "5:01 PM",
+      "Title": "Mikeitz"
+    },
+    {
+      "Date": "12/10/2021",
+      "StartTime": "3:59 PM",
+      "EndTime": "5:01 PM",
+      "Title": "Vayigash"
+    },
+    {
+      "Date": "12/14/2021",
+      "StartTime": "6:39 AM",
+      "EndTime": "4:53 PM",
+      "Title": "Fast - 10 Tevet"
+    },
+    {
+      "Date": "12/17/2021",
+      "StartTime": "4:00 PM",
+      "EndTime": "5:03 PM",
+      "Title": "Vayechi"
+    },
+    {
+      "Date": "12/24/2021",
+      "StartTime": "4:04 PM",
+      "EndTime": "5:06 PM",
+      "Title": "Shemot"
+    },
+    {
+      "Date": "12/31/2021",
+      "StartTime": "4:09 PM",
+      "EndTime": "5:12 PM",
+      "Title": "Va\u0027eira"
+    },
+    {
+      "Date": "1/7/2022",
+      "StartTime": "4:17 PM",
+      "EndTime": "5:19 PM",
+      "Title": "Bo"
+    },
+    {
+      "Date": "1/14/2022",
+      "StartTime": "4:26 PM",
+      "EndTime": "5:27 PM",
+      "Title": "Beshalach"
+    },
+    {
+      "Date": "1/21/2022",
+      "StartTime": "4:36 PM",
+      "EndTime": "5:37 PM",
+      "Title": "Yitro"
+    },
+    {
+      "Date": "1/28/2022",
+      "StartTime": "4:46 PM",
+      "EndTime": "5:46 PM",
+      "Title": "Mishpatim"
+    },
+    {
+      "Date": "2/4/2022",
+      "StartTime": "4:57 PM",
+      "EndTime": "5:57 PM",
+      "Title": "Terumah"
+    },
+    {
+      "Date": "2/11/2022",
+      "StartTime": "5:08 PM",
+      "EndTime": "6:07 PM",
+      "Title": "Tetzaveh"
+    },
+    {
+      "Date": "2/18/2022",
+      "StartTime": "5:19 PM",
+      "EndTime": "6:17 PM",
+      "Title": "Ki Tisa"
+    },
+    {
+      "Date": "2/25/2022",
+      "StartTime": "5:30 PM",
+      "EndTime": "6:28 PM",
+      "Title": "Vayak\u0027hel"
+    },
+    {
+      "Date": "3/4/2022",
+      "StartTime": "5:41 PM",
+      "EndTime": "6:38 PM",
+      "Title": "Pekudei"
+    },
+    {
+      "Date": "3/11/2022",
+      "StartTime": "5:51 PM",
+      "EndTime": "6:48 PM",
+      "Title": "Vayikra"
+    },
+    {
+      "Date": "3/16/2022",
+      "StartTime": "6:08 AM",
+      "EndTime": "7:47 PM",
+      "Title": "Fast - Taanit Esther"
+    },
+    {
+      "Date": "3/18/2022",
+      "StartTime": "7:01 PM",
+      "EndTime": "7:59 PM",
+      "Title": "Tzav"
+    },
+    {
+      "Date": "3/25/2022",
+      "StartTime": "7:11 PM",
+      "EndTime": "8:09 PM",
+      "Title": "Shemini"
+    },
+    {
+      "Date": "4/1/2022",
+      "StartTime": "7:21 PM",
+      "EndTime": "8:19 PM",
+      "Title": "Tazria"
+    },
+    {
+      "Date": "4/8/2022",
+      "StartTime": "7:31 PM",
+      "EndTime": "8:30 PM",
+      "Title": "Metzora"
+    },
+    {
+      "Date": "4/15/2022",
+      "StartTime": "7:41 PM",
+      "EndTime": "",
+      "Title": "Passover"
+    },
+    {
+      "Date": "4/16/2022",
+      "StartTime": "8:41 PM",
+      "EndTime": "8:42 PM",
+      "Title": "Pesach Day 2"
+    },
+    {
+      "Date": "4/21/2022",
+      "StartTime": "7:50 PM",
+      "EndTime": "",
+      "Title": " Seventh day Passover"
+    },
+    {
+      "Date": "4/22/2022",
+      "StartTime": "7:51 PM",
+      "EndTime": "8:52 PM",
+      "Title": "Achron Shel Pesach"
+    },
+    {
+      "Date": "4/29/2022",
+      "StartTime": "8:01 PM",
+      "EndTime": "9:03 PM",
+      "Title": "Acharei"
+    },
+    {
+      "Date": "5/6/2022",
+      "StartTime": "8:11 PM",
+      "EndTime": "9:14 PM",
+      "Title": "Kedoshim"
+    },
+    {
+      "Date": "5/13/2022",
+      "StartTime": "8:20 PM",
+      "EndTime": "9:25 PM",
+      "Title": "Emor"
+    },
+    {
+      "Date": "5/20/2022",
+      "StartTime": "8:29 PM",
+      "EndTime": "9:35 PM",
+      "Title": "Behar"
+    },
+    {
+      "Date": "5/27/2022",
+      "StartTime": "8:37 PM",
+      "EndTime": "9:44 PM",
+      "Title": "Bechukotai"
+    },
+    {
+      "Date": "6/3/2022",
+      "StartTime": "8:43 PM",
+      "EndTime": "",
+      "Title": "Bamidbar"
+    },
+    {
+      "Date": "6/4/2022",
+      "StartTime": "9:52 PM",
+      "EndTime": "",
+      "Title": "Shavuot"
+    },
+    {
+      "Date": "6/5/2022",
+      "StartTime": "9:53 PM",
+      "EndTime": "9:53 PM",
+      "Title": "Shavuot Day 2"
+    },
+    {
+      "Date": "6/10/2022",
+      "StartTime": "8:49 PM",
+      "EndTime": "9:57 PM",
+      "Title": "Naso"
+    },
+    {
+      "Date": "6/17/2022",
+      "StartTime": "8:52 PM",
+      "EndTime": "10:01 PM",
+      "Title": "Behaalotecha"
+    },
+    {
+      "Date": "6/24/2022",
+      "StartTime": "8:53 PM",
+      "EndTime": "10:02 PM",
+      "Title": "Shlach"
+    },
+    {
+      "Date": "7/1/2022",
+      "StartTime": "8:53 PM",
+      "EndTime": "10:00 PM",
+      "Title": "Korach"
+    },
+    {
+      "Date": "7/8/2022",
+      "StartTime": "8:50 PM",
+      "EndTime": "9:56 PM",
+      "Title": "Chukat"
+    },
+    {
+      "Date": "7/15/2022",
+      "StartTime": "8:45 PM",
+      "EndTime": "9:50 PM",
+      "Title": "Balak"
+    },
+    {
+      "Date": "7/17/2022",
+      "StartTime": "4:17 AM",
+      "EndTime": "9:39 PM",
+      "Title": "Fast - 17 Tammuz"
+    },
+    {
+      "Date": "7/22/2022",
+      "StartTime": "8:38 PM",
+      "EndTime": "9:41 PM",
+      "Title": "Pinchas"
+    },
+    {
+      "Date": "7/29/2022",
+      "StartTime": "8:30 PM",
+      "EndTime": "9:31 PM",
+      "Title": "Matot-Massei"
+    },
+    {
+      "Date": "8/5/2022",
+      "StartTime": "8:20 PM",
+      "EndTime": "9:19 PM",
+      "Title": "Devarim"
+    },
+    {
+      "Date": "8/5/2022",
+      "StartTime": "8:36 PM",
+      "EndTime": "9:09 PM",
+      "Title": "Fast - 9 Av"
+    },
+    {
+      "Date": "8/12/2022",
+      "StartTime": "8:08 PM",
+      "EndTime": "9:07 PM",
+      "Title": "Va\u0027etchanan"
+    },
+    {
+      "Date": "8/19/2022",
+      "StartTime": "7:56 PM",
+      "EndTime": "8:53 PM",
+      "Title": "Eikev"
+    },
+    {
+      "Date": "8/26/2022",
+      "StartTime": "7:43 PM",
+      "EndTime": "8:39 PM",
+      "Title": "Re\u0027eh"
+    },
+    {
+      "Date": "9/2/2022",
+      "StartTime": "7:29 PM",
+      "EndTime": "8:24 PM",
+      "Title": "Shoftim"
+    },
+    {
+      "Date": "9/9/2022",
+      "StartTime": "7:15 PM",
+      "EndTime": "8:10 PM",
+      "Title": "Ki Teitzei"
+    },
+    {
+      "Date": "9/16/2022",
+      "StartTime": "7:01 PM",
+      "EndTime": "7:55 PM",
+      "Title": "Ki Tavo"
+    },
+    {
+      "Date": "9/23/2022",
+      "StartTime": "6:47 PM",
+      "EndTime": "7:40 PM",
+      "Title": "Nitzavim"
+    },
+    {
+      "Date": "9/25/2022",
+      "StartTime": "6:42 PM",
+      "EndTime": "",
+      "Title": "Rosh Hashanah"
+    },
+    {
+      "Date": "9/26/2022",
+      "StartTime": "7:36 PM",
+      "EndTime": "7:34 PM",
+      "Title": "Rosh Hashanah 2"
+    },
+    {
+      "Date": "9/28/2022",
+      "StartTime": "5:52 AM",
+      "EndTime": "7:24 PM",
+      "Title": "Fast of Gedalia"
+    },
+    {
+      "Date": "9/30/2022",
+      "StartTime": "6:32 PM",
+      "EndTime": "7:26 PM",
+      "Title": "Vayelech"
+    },
+    {
+      "Date": "10/4/2022",
+      "StartTime": "6:24 PM",
+      "EndTime": "7:18 PM",
+      "Title": "Yom Kippur"
+    },
+    {
+      "Date": "10/7/2022",
+      "StartTime": "6:18 PM",
+      "EndTime": "7:12 PM",
+      "Title": "Ha\u0027azinu"
+    },
+    {
+      "Date": "10/9/2022",
+      "StartTime": "6:14 PM",
+      "EndTime": "",
+      "Title": "Sukkot"
+    },
+    {
+      "Date": "10/10/2022",
+      "StartTime": "7:08 PM",
+      "EndTime": "7:06 PM",
+      "Title": "Sukkot 1 [and 2]"
+    }
+  ]
+}

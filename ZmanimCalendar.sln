@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZmanimCalendar", "ZmanimCalculator\ZmanimCalendar.csproj", "{50A91690-11C9-4530-AE4C-4E85F3965251}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5877AC20-DE20-4C09-8000-AC3965D6FC38}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZmanimCalendarTests", "ZmanimCalanedarTests\ZmanimCalendarTests.csproj", "{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A91690-11C9-4530-AE4C-4E85F3965251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A91690-11C9-4530-AE4C-4E85F3965251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A91690-11C9-4530-AE4C-4E85F3965251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A91690-11C9-4530-AE4C-4E85F3965251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C50A0D4-10CD-43E4-B8DF-E3AC882EB890}
+	EndGlobalSection
+EndGlobal
