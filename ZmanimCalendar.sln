@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZmanimCalanedarTests", "ZmanimCalanedarTests\ZmanimCalanedarTests.csproj", "{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZmanimCalendarTests", "ZmanimCalanedarTests\ZmanimCalendarTests.csproj", "{6BEBD8A5-EB4C-4624-BE2B-99E4B5FCD4D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

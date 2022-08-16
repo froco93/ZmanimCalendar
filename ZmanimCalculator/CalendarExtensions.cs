@@ -45,7 +45,7 @@ namespace ZmanimCalendar
             if (day.DayOfWeek == 5)
             {
                 return day.TimeGroups.FirstOrDefault(timeGroup => timeGroup.EssentialZmanType == "CandleLighting")?
-                    .Items.FirstOrDefault()?.Zman ?? String.Empty;
+                    .Items.FirstOrDefault()?.Zman ?? string.Empty;
             }
 
             return day.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Tzeis")?
@@ -54,9 +54,14 @@ namespace ZmanimCalendar
 
         public static DayResult GetFastTimes(this Day fastDay)
         {
-            var fastStart = "The provided time is an extra early time. For later start time see My Zmanim for dawn fixed minutes. The earlier start time is ";
-            fastStart += fastDay.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "AlosHashachar")?
-                .Items.FirstOrDefault(item => item.TechnicalInformation == "16.1 degrees below horizon")?.Zman ?? string.Empty;
+            var sunrise = fastDay.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "NetzHachamah")?
+                .Items.FirstOrDefault(item => item.EssentialZmanType == "NetzHachamah")?.Zman ?? string.Empty;
+            // Fast start time is 72 minutes before sunrise.
+            string fastStart = string.Empty;
+            if(DateTime.TryParse(sunrise, out var sunriseDate))
+            {
+                fastStart = sunriseDate.Subtract(TimeSpan.FromMinutes(72)).ToShortTimeString();
+            }
 
             string fastEnd = fastDay.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Tzeis")?
                 .Items.FirstOrDefault(item => item.TechnicalInformation == "5.83 degrees")?.Zman ?? string.Empty;

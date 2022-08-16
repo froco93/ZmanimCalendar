@@ -1,4 +1,5 @@
 using FluentAssertions;
+using FluentAssertions.Execution;
 using Moq;
 using System.Diagnostics;
 using System.Text.Json;
@@ -36,9 +37,16 @@ namespace ZmanimCalanedarTests
 
             var calendarBuilder = new CalendarBuilder(fullYearInput);
 
-            var result = calendarBuilder.CalculateCalendar();
+            var results = calendarBuilder.CalculateCalendar();
 
-            result.Should().Equal(fullYearExpectedResults);
+            foreach(var result in results)
+            {
+                var expectedResult = fullYearExpectedResults[0];
+                fullYearExpectedResults.RemoveAt(0);
+                result.Should().Be(expectedResult);
+            }
+
+            fullYearExpectedResults.Should().BeEmpty();
         }
 
         [Fact]
@@ -48,9 +56,15 @@ namespace ZmanimCalanedarTests
 
             var calendarBuilder = new CalendarBuilder(fullYearInput, mockZmanService.Object);
 
-            var result = calendarBuilder.CalculateCalendar();
+            var results = calendarBuilder.CalculateCalendar();
 
-            result.Should().Equal(smallExpectedResults);
+            foreach (var result in results)
+            {
+                var expectedResult = smallExpectedResults[0];
+                smallExpectedResults.RemoveAt(0);
+                result.Should().Be(expectedResult);
+            }
+            smallExpectedResults.Should().BeEmpty();
         }
     }
 }

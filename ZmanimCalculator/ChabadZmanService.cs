@@ -25,7 +25,7 @@ namespace ZmanimCalendar
             DateTime intervalStartTime = userInput.StartDate;
             while (intervalStartTime < userInput.EndDate)
             {
-                var intervalEnd = intervalStartTime + interval;
+                var intervalEnd = new[] { intervalStartTime + interval, userInput.EndDate }.Min();
                 string content = GetZmanBlock(intervalEnd).GetAwaiter().GetResult();
                 Console.WriteLine($"Retrived Times between {intervalStartTime:s} and {intervalEnd:s}");
                 intervalStartTime = intervalEnd.AddDays(1);
