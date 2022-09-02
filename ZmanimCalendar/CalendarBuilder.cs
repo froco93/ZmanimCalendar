@@ -64,6 +64,7 @@ namespace ZmanimCalendar
                             candles = day.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Shkiah")?
                                 .Items.FirstOrDefault()?.Zman ?? string.Empty;
                             candlesSet = true;
+                            prevDate = day.DisplayDate;
                         }
                     }
                     else

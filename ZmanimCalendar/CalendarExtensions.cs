@@ -64,7 +64,7 @@ namespace ZmanimCalendar
             }
 
             string fastEnd = fastDay.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Tzeis")?
-                .Items.FirstOrDefault(item => item.TechnicalInformation == "5.83 degrees")?.Zman ?? string.Empty;
+                .Items.FirstOrDefault(item => item.TechnicalInformation == "6 degrees")?.Zman ?? string.Empty;
 
             return new DayResult(fastDay.DisplayDate, fastStart, fastEnd, fastDay.HolidayName);
         }
