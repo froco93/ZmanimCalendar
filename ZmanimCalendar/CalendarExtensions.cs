@@ -19,6 +19,16 @@ namespace ZmanimCalendar
             return holidayName.Contains("Yom Kippur") || holidayName.Contains("Av");
         }
 
+        public static bool IsErev9AvAndNotShabbat(this Day day)
+        {
+            if (day.DayOfWeek == 6)
+            {
+                return false;
+            }
+
+            return day.TimeGroups?.Any(timeGroup => timeGroup?.Title == "Sunset (Shkiah) | Fast Begins") ?? false;
+        }
+
         public static bool IsErev(this Day day)
         {
             return day.HolidayName.StartsWith("Eve");
@@ -58,7 +68,7 @@ namespace ZmanimCalendar
                 .Items.FirstOrDefault(item => item.EssentialZmanType == "NetzHachamah")?.Zman ?? string.Empty;
             // Fast start time is 72 minutes before sunrise.
             string fastStart = string.Empty;
-            if(DateTime.TryParse(sunrise, out var sunriseDate))
+            if (DateTime.TryParse(sunrise, out var sunriseDate))
             {
                 fastStart = sunriseDate.Subtract(TimeSpan.FromMinutes(72)).ToString("h:mm tt");
             }
@@ -72,7 +82,7 @@ namespace ZmanimCalendar
         public static DayResult GetAvTimes(this Day fastDay, string candleLighting, string startDate)
         {
             string fastEnd = fastDay.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Tzeis")?
-                .Items.FirstOrDefault(item => item.TechnicalInformation == "5.83 degrees")?.Zman ?? string.Empty;
+                .Items.FirstOrDefault(item => item.TechnicalInformation == "6 degrees")?.Zman ?? string.Empty;
 
             return new DayResult(startDate, candleLighting, fastEnd, fastDay.HolidayName);
         }
