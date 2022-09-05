@@ -57,12 +57,12 @@ namespace ZmanimCalendar
                     dayResult = day.GetFastTimes();
                 }
                 // If its a special fast day (9 Av or YomKippur), get the correct times
-                else if (day.HolidayName.IsSpecialFastDay() || day.IsErev9Av())
+                else if (day.HolidayName.IsSpecialFastDay() || day.IsErev9AvAndNotShabbat())
                 {
                     // For Eve of 9Av, override start time with shkiah instead of candle lighting
-                    if (day.IsErev9Av() || day.HolidayName.StartsWith("Eve"))
+                    if (day.IsErev9AvAndNotShabbat() || day.HolidayName.StartsWith("Eve"))
                     {
-                        if (day.IsErev9Av() || day.HolidayName.Contains("Av"))
+                        if (day.IsErev9AvAndNotShabbat() || day.HolidayName.Contains("Av"))
                         {
                             candles = day.TimeGroups.FirstOrDefault(_ => _.EssentialZmanType == "Shkiah")?
                                 .Items.FirstOrDefault()?.Zman ?? string.Empty;

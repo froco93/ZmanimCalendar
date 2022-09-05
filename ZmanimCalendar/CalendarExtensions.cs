@@ -19,8 +19,13 @@ namespace ZmanimCalendar
             return holidayName.Contains("Yom Kippur") || holidayName.Contains("Av");
         }
 
-        public static bool IsErev9Av(this Day day)
-        {            
+        public static bool IsErev9AvAndNotShabbat(this Day day)
+        {
+            if (day.DayOfWeek == 6)
+            {
+                return false;
+            }
+
             return day.TimeGroups?.Any(timeGroup => timeGroup?.Title == "Sunset (Shkiah) | Fast Begins") ?? false;
         }
 
@@ -63,7 +68,7 @@ namespace ZmanimCalendar
                 .Items.FirstOrDefault(item => item.EssentialZmanType == "NetzHachamah")?.Zman ?? string.Empty;
             // Fast start time is 72 minutes before sunrise.
             string fastStart = string.Empty;
-            if(DateTime.TryParse(sunrise, out var sunriseDate))
+            if (DateTime.TryParse(sunrise, out var sunriseDate))
             {
                 fastStart = sunriseDate.Subtract(TimeSpan.FromMinutes(72)).ToString("h:mm tt");
             }
