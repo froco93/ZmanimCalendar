@@ -16,6 +16,7 @@ namespace ZmanimCalendar
         public ChabadZmanimService()
         {
             chabadHttpClient = new HttpClient() { BaseAddress = new Uri("https://www.chabad.org") };
+            chabadHttpClient.DefaultRequestHeaders.Add("Accept", acceptHeader);
         }
 
         public IEnumerable<ChabadZmanResult> GetChabadZmanResults(UserInput userInput)
@@ -40,7 +41,6 @@ namespace ZmanimCalendar
                                     intervalStartTime.ToString("u").Substring(0, 10),
                                     intervalEnd.ToString("u").Substring(0, 10));
                 var httpRequest = new HttpRequestMessage(HttpMethod.Get, apiUri);
-                chabadHttpClient.DefaultRequestHeaders.Add("Accept", acceptHeader);
 
                 var httpResponse = await chabadHttpClient.SendAsync(httpRequest);
                 var content = await httpResponse.Content.ReadAsStringAsync();
