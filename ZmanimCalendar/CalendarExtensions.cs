@@ -121,6 +121,7 @@ namespace ZmanimCalendar
         public static bool IsChag(this Day day)
         {
             return day.IsHoliday &&
+                 day.HolidayName != null &&
                 !day.HolidayName.Contains("Chanukah") &&
                 !day.HolidayName.Contains("Purim") &&
                 !day.HolidayName.Contains("Intermediate");
